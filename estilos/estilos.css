@@ -1,0 +1,60 @@
+﻿body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHsBeWHOWOC7xJNSv7N6WTZ06BIdSq2UkbQ&usqp=CAU");
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(150,150,150,0.9);
+}
+h5 {
+    text-align: center;
+}
+
+header footer {
+    height: 100px;
+    background-color: rgb(27, 27, 27);
+}
+
+.nombre {
+    /*margin-left: 100px;*/
+}
+
+.imagen {
+    /*width: 200px;
+    height: 200px;*/
+}
+
+.genero {
+    margin-bottom: 30px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    object-fit: cover;
+}
+
+.container {
+    background-color: beige;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.colorArriba:hover {
+    background-color: bisque;
+}
+
+
