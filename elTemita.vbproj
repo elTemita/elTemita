@@ -97,6 +97,7 @@
     <Content Include="html\Cumbia.html" />
     <Content Include="html\Electronica.html" />
     <Content Include="html\Funk.html" />
+    <Content Include="html\Hiphop.html" />
     <Content Include="html\jazz.html" />
     <Content Include="html\Generos.html" />
     <Content Include="html\LogIn.html" />
