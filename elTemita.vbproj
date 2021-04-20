@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="estilos\bootstrap.css" />
     <Content Include="estilos\estilos.css" />
+    <Content Include="html\Calendario.html" />
     <Content Include="html\Cumbia.html" />
     <Content Include="html\Electronica.html" />
     <Content Include="html\Funk.html" />
