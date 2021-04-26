@@ -92,7 +92,9 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estilos\bootstrap.bundle.js" />
     <Content Include="estilos\bootstrap.css" />
+    <Content Include="estilos\bootstrap.js" />
     <Content Include="estilos\estilos.css" />
     <Content Include="html\Calendario.html" />
     <Content Include="html\Cumbia.html" />
@@ -114,6 +116,7 @@
     <Content Include="images\generos-imagenes\pop.jpg" />
     <Content Include="images\generos-imagenes\reggae.jpg" />
     <Content Include="images\generos-imagenes\rock.jpg" />
+    <Content Include="images\logo.svg" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>

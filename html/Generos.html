@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <script src="js/bootstrap.js"></script>
+    <script src="../estilos/bootstrap.bundle.js"></script>
+    <script src="../estilos/bootstrap.js"></script>
     <link href="../estilos/estilos.css" rel="stylesheet" />
     <link href="../estilos/bootstrap.css" rel="stylesheet" />
-    <script src="js/bootstrap.bundle.js"></script>
     <title>ElTemita</title>
 </head>
 <body>
-    <header>
+
+    <!-- Lo comento por si rompo algo agregando el navbar -->
+    <!--<header>
         <div class="row justify-content-between tituloGeneros">
             <div class="col-sm-6 col-lg-6">
                 <h5>Generos musicales</h5>
@@ -18,20 +20,43 @@
                 <a class="btn btn-dark form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
             </div>
         </div>
-    </header>
+    </header>-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/html/Generos.html"><img src="../images/logo.svg" alt="" width="100" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Asd</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a class="btn btn-outline-light form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
             <div class="col-sm genero">
                 <div class="row">
                     <label>Jazz</label>
-                    <a href="jazz.html"><img src="../images/generos-imagenes/jazz.jpg" class="rounded center" /></a>
+                    <a href="jazz.html"><img src="../images/generos-imagenes/jazz.jpg" class="rounded center imagen-genero" /></a>
                 </div>
             </div>
 
             <div class="col-sm genero">
                 <div class="row">
                     <label>Rock</label>
-                    <a href="rock.html"><img src="../images/generos-imagenes/rock.jpg" class="rounded center" /></a>
+                    <a href="rock.html"><img src="../images/generos-imagenes/rock.jpg" class="rounded center imagen-genero" /></a>
                 </div>
             </div>
 
@@ -39,7 +64,7 @@
                 <div class="row">
                     <div class="nombre"> Funk </div>
                     <div class="imagen">
-                        <a href="Funk.html"><img src="../images/generos-imagenes/funk.jpg" class="rounded center" alt="..."></a>
+                        <a href="Funk.html"><img src="../images/generos-imagenes/funk.jpg" class="rounded center imagen-genero" alt="..."></a>
                     </div>
                 </div>
             </div>
@@ -48,40 +73,40 @@
                 <div class="row">
                     <div class="nombre"> Pop </div>
                     <div class="imagen">
-                        <a href="Pop.html"><img src="../images/generos-imagenes/pop.jpg" class="rounded center" alt="..."></a>
+                        <a href="Pop.html"><img src="../images/generos-imagenes/pop.jpg" class="rounded center imagen-genero" alt="..."></a>
                     </div>
                 </div>
             </div>
 
-        <div class="row">
-            <div class="col-sm genero">
-                <div class="nombre"> Cumbia  </div>
-                <div class="imagen">
-                    <a href="Cumbia.html"><img src="../images/generos-imagenes/cumbia.jpg" class="rounded" alt="..."></a>
-        </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre"> Reggae </div>
-                <div class="imagen">
-                    <a href="Reggae.html"><img src="../images/generos-imagenes/reggae.jpg" class="rounded" alt="..."></a>
+            <div class="row">
+                <div class="col-sm genero">
+                    <div class="nombre"> Cumbia  </div>
+                    <div class="imagen">
+                        <a href="Cumbia.html"><img src="../images/generos-imagenes/cumbia.jpg" class="rounded center imagen-genero" alt="..."></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre"> Electrónica  </div>
-                <div class="imagen">
-                    <a href="Electronica.html"><img src="../images/generos-imagenes/electronica.jpg" class="rounded" alt="..."></a>
+                <div class="col-sm genero">
+                    <div class="nombre"> Reggae </div>
+                    <div class="imagen">
+                        <a href="Reggae.html"><img src="../images/generos-imagenes/reggae.jpg" class="rounded center imagen-genero" alt="..."></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre">  Hip Hop </div>
-                <div class="imagen">
-                    <a href="Hiphop.html"><img src="../images/generos-imagenes/hiphop.jpg" class="rounded" alt="..."></a>
+                <div class="col-sm genero">
+                    <div class="nombre"> Electrónica  </div>
+                    <div class="imagen">
+                        <a href="Electronica.html"><img src="../images/generos-imagenes/electronica.jpg" class="rounded center imagen-genero" alt="..."></a>
+                    </div>
+                </div>
+                <div class="col-sm genero">
+                    <div class="nombre">  Hip Hop </div>
+                    <div class="imagen">
+                        <a href="Hiphop.html"><img src="../images/generos-imagenes/hiphop.jpg" class="rounded center imagen-genero" alt="..."></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
-    
+
 
     <footer></footer>
 </body>

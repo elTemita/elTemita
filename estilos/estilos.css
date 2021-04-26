@@ -39,12 +39,14 @@ header footer {
     justify-content: center;
 }
 
-img {
+.imagen-genero {
     border-radius: 50%;
     width: 15vh;
     height: 15vh;
     object-fit: cover;
 }
+
+
 
 .container {
     background-color: beige;
