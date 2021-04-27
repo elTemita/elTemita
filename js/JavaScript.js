@@ -22,6 +22,11 @@
         }
     });
 
+function Enviar() {
+    var nombre = document.getElementById("nombreBanda");
+    var fecha = document.getElementById("fecha");
+}
+
 //
 
 //    Execute a function when the user releases a key on the keyboard
