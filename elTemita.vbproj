@@ -107,6 +107,7 @@
     <Content Include="html\Pop.html" />
     <Content Include="html\Reggae.html" />
     <Content Include="html\rock.html" />
+    <Content Include="html\SignUp.html" />
     <Content Include="images\generos-imagenes\cumbia.jpg" />
     <Content Include="images\generos-imagenes\electronica.jpg" />
     <Content Include="images\generos-imagenes\funk.jpg" />
