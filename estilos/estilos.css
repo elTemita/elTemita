@@ -68,6 +68,11 @@ header footer {
     background-color: bisque;
 }
 
+.agus {
+    background-color: pink;
+    justify-content: left;
+}
+
 .inicioSesion {
     text-align: right;
     margin-right: 150px;    
