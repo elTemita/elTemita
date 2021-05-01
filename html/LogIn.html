@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="Generos.html"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,35 +35,37 @@
             </div>
         </div>
     </nav>
+
     <h2>Iniciar Sesión</h2>
 
-    <div class="container" style="margin:15px">
+    <div class="container-usuario mx-auto">
+        <div class="caja-transparente mx-auto px-3 lg">
+            <form name=form action="Generos.html">
 
-        <form name=form action="Generos.html">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Usuario</label>
+                        <input type="text" id="usuario" name=login class="form-control colorArriba" />
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Usuario</label>
-                    <input type="text" id="usuario" name=login class="form-control colorArriba" />
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Contraseña</label>
+                        <input type="password" id="contra" name="password" class="form-control colorArriba" />
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="row" style="margin:5px">
+                <div class="col-sm-12 col-lg-2">
+                    <button onclick=go() id="enviar" class="btn-dark form-control"> Enviar</button>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Contraseña</label>
-                    <input type="password" id="contra" name="password" class="form-control colorArriba" />
-                </div>
-            </div>
-
-        </form>
-
-        <div class="row" style="margin:5px">
-            <div class="col-sm-12 col-lg-2">
-                <button onclick=go() id="enviar" class="btn-dark form-control"> Enviar</button>
-            </div>
         </div>
-
-    </div>
+     </div>
 
 </body>
 </html>

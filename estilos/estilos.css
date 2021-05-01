@@ -89,3 +89,28 @@ a:link, a:visited, a:active {
 }
 
 
+
+/*Desde acá son los que se usan para login y sign up*/
+.caja-transparente {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 600px;
+}
+
+.container-usuario {
+    align-content: center;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    position: relative;
+}
+
+
+/* Ajuste para el botón blanco de navbar, si no queda con texto blanco*/
+.btn-light {
+    color: #000000 !important;
+}
+
