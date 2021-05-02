@@ -70,7 +70,10 @@ header footer {
 
 .agus {
     background-color: pink;
-    justify-content: left;
+    float: left;
+    /* overflow: hidden;*/
+    display: inline-block;
+    
 }
 
 .inicioSesion {
