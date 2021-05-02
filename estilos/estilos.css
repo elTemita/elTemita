@@ -1,8 +1,10 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHsBeWHOWOC7xJNSv7N6WTZ06BIdSq2UkbQ&usqp=CAU");
     background-size: cover;
     min-height: 100vh;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -107,6 +109,24 @@ a:link, a:visited, a:active {
     background: rgba(0,0,0,0);
     position: relative;
 }
+
+
+/*Contenedor para cada artista*/
+.caja-artista {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    max-width: 1000px;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+iframe {
+    width: 100%; /*Sacamos el ancho fijo asi se ajusta al contenedor y se hace responsive. El 100% es el ancho de su contenedor. */
+    height: 300px;
+}
+
 
 
 /* Ajuste para el botón blanco de navbar, si no queda con texto blanco*/
