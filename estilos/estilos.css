@@ -73,6 +73,7 @@ header footer {
 .agus {
     background-color: pink;
     justify-content: left;
+    height: 100%;
 }
 
 .inicioSesion {
@@ -122,8 +123,11 @@ a:link, a:visited, a:active {
 }
 
 
-iframe {
+ iframe {
     width: 100%; /*Sacamos el ancho fijo asi se ajusta al contenedor y se hace responsive. El 100% es el ancho de su contenedor. */
+}
+/* Solo aplica a los iframe de la clase playlist */
+.playlist iframe {
     height: 300px;
 }
 
