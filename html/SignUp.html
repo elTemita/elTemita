@@ -2,74 +2,87 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <script src="../estilos/bootstrap.bundle.js"></script>
-    <script src="../estilos/bootstrap.js"></script>
-    <link href="../estilos/estilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../estilos/bootstrap.css" rel="stylesheet" />
-    <title>ElTemita</title>
+    <script src="../estilos/bootstrap.js"></script>
+    <title>ElTemita | Registrarse</title>
+    <link href="../estilos/estilos.css" rel="stylesheet" />
 </head>
 
 
-
 <body class="text-center">
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Generos.html"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Asd</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mx-2">
+                    <a class="btn btn-outline-light form-control" id="enviar" href="SignUp.html"> Registrarse </a>
+                </span>
+                <span class="navbar-text mx-2">
+                    <a class="btn btn-light form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    
     <h2>Registrar usuario</h2>
 
-    <div class="container my-auto" style="margin:15px">
-    <div class="caja-transparente my-auto" style="margin:15px">
-
-        <form name=form class="" action="Generos.html">
-
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Usuario</label>
-                    <input type="text" id="usuario" name="usuario" class="form-control colorArriba" />
+    <div class="container-usuario mx-auto">
+        <div class="caja-transparente mx-auto px-3 lg">
+            <form name=form action="Generos.html">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Usuario</label>
+                        <input type="text" id="usuario" name="usuario" class="form-control colorArriba" />
+                    </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>E-mail</label>
-                    <input type="email" id="mail" name="mail" class="form-control colorArriba" />
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>E-mail</label>
+                        <input type="email" id="mail" name="mail" class="form-control colorArriba" />
+                    </div>
                 </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Fecha de nacimiento</label>
-                    <input type="date" id="fnac" name="fnac" class="form-control colorArriba" />
+
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" id="fnac" name="fnac" class="form-control colorArriba" />
+                    </div>
                 </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-3 col-sm-12">
-                    <label>Soy artista</label>
-                    <input type="radio" id="artista" name="password"  value="artista" checked class="colorArriba" />
-
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Contraseña</label>
+                        <input type="password" id="contra" name="password" class="form-control colorArriba" />
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <label>Soy usuario</label>
-                    <input type="radio" id="usuario" name="password"  value="usuario" class="colorArriba" />
+                <div class="row justify-content-center my-3">
+                    <div class="col mx-auto ">
+                        <label>Soy artista</label>
+                        <input type="radio" id="artista" name="password" value="artista" checked class="colorArriba" />
+                    </div>
+                    <div class="col  mx-auto">
+                        <label>Soy usuario</label>
+                        <input type="radio" id="usuario" name="password" value="usuario" class="colorArriba" />
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Contraseña</label>
-                    <input type="password" id="contra" name="password" class="form-control colorArriba" />
+                <div class="row">
+                    <div class="col">
+                        <button onclick=registrar() id="enviar" class="btn-dark form-control my-3 "> Enviar</button>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="row" style="margin:5px">
-                <div class="col-sm-12 col-lg-2">
-                    <button onclick=registrar() id="enviar" class="btn-dark form-control"> Enviar</button>
-                </div>
-            </div>
-        </form>
-
-
-
-    </div>
+            </form>
+        </div>
     </div>
 
 </body>
@@ -77,32 +90,14 @@
 
 
 <style>
-
     .body {
         align-items: center;
         width: 100%;
     }
 
-    .container  {
-        align-content: center;
-        width:100%;
-        background: rgba(0,0,0,0);
+    label {
+        font-size: 1.5rem;
     }
-
-    .caja-transparente {
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        margin:0 auto;
-        position:relative;
-        max-width: 600px;
-        padding: 10px;
-    }
-
-
 
 </style>
 
@@ -112,7 +107,6 @@
     function registrar() {
         var nombre = document.getElementById("usuario");
         var mail = document.getElementById("mail");
-
         document.form.submit();
         alert(usuario.value);
 
@@ -128,11 +122,5 @@
             document.getElementById("enviar").click();
         }
     });
-
-//
-
-//    Execute a function when the user releases a key on the keyboard
-
-
 
 </script>

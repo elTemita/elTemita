@@ -2,44 +2,70 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <script src="../estilos/bootstrap.bundle.js"></script>
-    <script src="../estilos/bootstrap.js"></script>
-    <link href="../estilos/estilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../estilos/bootstrap.css" rel="stylesheet" />
+    <script src="../estilos/bootstrap.js"></script>
+    <title>ElTemita | Iniciar Sesión</title>
+    <link href="../estilos/estilos.css" rel="stylesheet" />
     <script src="../js/JavaScript.js"></script>
-    <title>ElTemita</title>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Generos.html"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Asd</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mx-2">
+                    <a class="btn btn-outline-light form-control " id="enviar" href="SignUp.html"> Registrarse </a>
+                </span>
+                <span class="navbar-text mx-2">
+                    <a class="btn btn-light form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
+                </span>
+            </div>
+        </div>
+    </nav>
 
     <h2>Iniciar Sesión</h2>
 
-    <div class="container" style="margin:15px">
+    <div class="container-usuario mx-auto">
+        <div class="caja-transparente mx-auto px-3 lg">
+            <form name=form action="Generos.html">
 
-        <form name=form action="Generos.html">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Usuario</label>
+                        <input type="text" id="usuario" name=login class="form-control colorArriba" />
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Usuario</label>
-                    <input type="text" id="usuario" name=login class="form-control colorArriba" />
+                <div class="row">
+                    <div class="col mx-auto">
+                        <label>Contraseña</label>
+                        <input type="password" id="contra" name="password" class="form-control colorArriba" />
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="row" style="margin:5px">
+                <div class="col-sm-12 col-lg-2">
+                    <button onclick=go() id="enviar" class="btn-dark form-control"> Enviar</button>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <label>Contraseña</label>
-                    <input type="password" id="contra" name="password" class="form-control colorArriba" />
-                </div>
-            </div>
-
-        </form>
-
-        <div class="row" style="margin:5px">
-            <div class="col-sm-12 col-lg-2">
-                <button onclick=go() id="enviar" class="btn-dark form-control"> Enviar</button>
-            </div>
         </div>
-
-    </div>
+     </div>
 
 </body>
 </html>
