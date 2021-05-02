@@ -7,6 +7,8 @@
     <script src="../estilos/bootstrap.js"></script>
     <title>ElTemita | Jazz</title>
     <link href="../estilos/estilos.css" rel="stylesheet" />
+    <script src="../js/JavaScript.js"></script>
+
 </head>
 <body>
 
@@ -37,17 +39,45 @@
 
     <h1> Los clásicos del Jazz </h1>
 
-    <div class="col-sm-8">
-        <div class="row">
-            <iframe src="https://open.spotify.com/embed/artist/1YzCsTRb22dQkh9lghPIrp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <div class="col container-usuario mx-auto">
+        <div class="row caja-artista mx-auto p-2">
+            <div class="col-lg-7 mx-auto">
+                <h2> Billie Holliday </h2>
+                <p>12/07/2021 19:00hs</p>
+                <div class="col-4 py-2 mx-auto boton-asistir">
+                    <a class="btn btn-outline-light form-control" onclick=entradasFalse() id="comprarEntrada" href="#"> Quiero ir </a>
+                </div>
+            </div>
+            <div class="col-lg-5 mx-auto playlist">
+                <iframe src="https://open.spotify.com/embed/artist/1YzCsTRb22dQkh9lghPIrp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="row caja-artista mx-auto p-2">
+
+                <div class="row caja-artista mx-auto">
+                    <div class="col-lg-7 mx-auto">
+                        <h2> Ella Fitzgerald </h2>
+                        <p> Streaming Mejores Conciertos 15/11/2021 11:00hs</p>
+                        <div class="col-4 py-2 mx-auto boton-asistir">
+                            <a class="btn btn-outline-light form-control" onclick=entradasOk() id="comprarEntrada" href="#"> Quiero ir </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 playlist">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXciLbPVkluM0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="row caja-artista mx-auto">
+                        <div class="col-lg-7">
+                            <h2> Frank Sinatra </h2>
+                        </div>
+                        <div class="col-lg-5 playlist">
+                            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4H3NUOwVLXj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
         </div>
-        <div class="row">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXciLbPVkluM0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div class="row">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4H3NUOwVLXj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-    </div>
+
 
 
 

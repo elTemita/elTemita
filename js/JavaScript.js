@@ -28,6 +28,18 @@ function Enviar() {
     alert("Gracias por contactarnos, " + nombre.value + "!")
 }
 
+function entradasOk() {
+
+        alert("Te anotaste correctamente");
+    
+}
+
+function entradasFalse() {
+
+    alert("Entradas Agotadas");
+
+}
+
 //
 
 //    Execute a function when the user releases a key on the keyboard
