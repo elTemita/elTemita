@@ -1,7 +1,8 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHsBeWHOWOC7xJNSv7N6WTZ06BIdSq2UkbQ&usqp=CAU");
+    /*  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHsBeWHOWOC7xJNSv7N6WTZ06BIdSq2UkbQ&usqp=CAU");*/
+    background-image: url("https://i.pinimg.com/originals/3f/b9/d7/3fb9d7397d0f6ce64e99d3561db75d03.png");
     background-size: cover;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
