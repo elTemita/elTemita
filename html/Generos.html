@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Para que cuando se abre en mobile se vea a escala -->
     <link href="../estilos/bootstrap.css" rel="stylesheet" />
     <script src="../estilos/bootstrap.js"></script>
     <title>ElTemita</title>
@@ -12,20 +12,8 @@
 </head>
 <body>
 
-    <!-- Lo comento por si rompo algo agregando el navbar -->
-    <!--<header>
-        <div class="row justify-content-between tituloGeneros">
-            <div class="col-sm-6 col-lg-6">
-                <h5>Generos musicales</h5>
-            </div>
-            <div class="col-sm-6 col-lg-2 inicioSesion">
-                <a class="btn btn-dark form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
-            </div>
-        </div>
-    </header>-->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid"> <!--todo el ancho de la página-->
             <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,72 +37,30 @@
         </div>
     </nav>
 
+    <div class="container p-0">
+        <div class="hero">
+            <div class="row align-content-center my-auto py-5">
+                <div class="col-lg-6 my-auto">
+                    <div class="col-sm-12 col-lg-3 mx-auto ">
+                        <img src="/images/logoblanco.png" />
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto overlay-transp py-3">
+                    <p class="lead">en elTemita te recomendamos los mejores recitales.</p>
+                    <hr class="my-4">
+                    <p>podés comprar tus entradas desde acá, nosotros nos encargamos del resto!.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
 
+
+
+            </div>
+
+        </div>
+    </div>
     <h1>Próximos eventos</h1>
-
-    <!--<div class="container">
-        <div class="row">
-            <div class="col-sm genero">
-                <div class="row">
-                    <label>Jazz</label>
-                    <a href="jazz.html"><img src="../images/generos-imagenes/jazz.jpg" class="rounded center imagen-genero" /></a>
-                </div>
-            </div>
-
-            <div class="col-sm genero">
-                <div class="row">
-                    <label>Rock</label>
-                    <a href="rock.html"><img src="../images/generos-imagenes/rock.jpg" class="rounded center imagen-genero" /></a>
-                </div>
-            </div>
-
-            <div class="col-sm genero">
-                <div class="row">
-                    <div class="nombre"> Funk </div>
-                    <div class="imagen">
-                        <a href="Funk.html"><img src="../images/generos-imagenes/funk.jpg" class="rounded center imagen-genero" alt="..."></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm genero">
-                <div class="row">
-                    <div class="nombre"> Pop </div>
-                    <div class="imagen">
-                        <a href="Pop.html"><img src="../images/generos-imagenes/pop.jpg" class="rounded center imagen-genero" alt="..."></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm genero">
-                <div class="nombre"> Cumbia  </div>
-                <div class="imagen">
-                    <a href="Cumbia.html"><img src="../images/generos-imagenes/cumbia.jpg" class="rounded center imagen-genero" alt="..."></a>
-                </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre"> Reggae </div>
-                <div class="imagen">
-                    <a href="Reggae.html"><img src="../images/generos-imagenes/reggae.jpg" class="rounded center imagen-genero" alt="..."></a>
-                </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre"> Electrónica  </div>
-                <div class="imagen">
-                    <a href="Electronica.html"><img src="../images/generos-imagenes/electronica.jpg" class="rounded center imagen-genero" alt="..."></a>
-                </div>
-            </div>
-            <div class="col-sm genero">
-                <div class="nombre">  Hip Hop </div>
-                <div class="imagen">
-                    <a href="Hiphop.html"><img src="../images/generos-imagenes/hiphop.jpg" class="rounded center imagen-genero" alt="..."></a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
 
 
     <footer></footer>
@@ -122,6 +68,29 @@
 </html>
 
 <style>
+
+    .jumbotron {
+        padding: 0!important;
+        margin: 0!important;
+        margin-bottom: 2rem;
+        border-radius: .3rem;
+        background-image: url("/images/people-festival.jpg");
+        max-width: 100%;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .overlay-transp {
+        background: rgba( 255, 255, 255, 0.5 );
+        backdrop-filter: blur( 4px );
+
+    }
+
+/*    .jumbotron img {
+            max-height: 100%;
+            max-width: 100%;
+
+     }*/
 
     img:hover {
         top: 0;
@@ -134,4 +103,11 @@
     }
 
 
+    .fondito {
+
+    }
+
+    .img-principal {
+
+    }
 </style>

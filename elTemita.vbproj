@@ -118,6 +118,8 @@
     <Content Include="images\generos-imagenes\reggae.jpg" />
     <Content Include="images\generos-imagenes\rock.jpg" />
     <Content Include="images\logo.svg" />
+    <Content Include="images\logoblanco.png" />
+    <Content Include="images\people-festival.jpg" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
