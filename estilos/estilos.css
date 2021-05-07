@@ -10,15 +10,17 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
+    /*    color: white;*/
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /*    padding-top: 40px;
+    padding-bottom: 40px;*/
+    /*Lo cambio a rem asi queda responsive*/
+    padding-top: 1rem ;
+    padding-bottom: 0.5rem;
     margin-bottom: 5px;
     /*background-color: rgba(150,150,150,0.9);*/
-    
     /*BORDECITO DE COLOR NEGRO PARA LA LETRA DE LOS TÍTULOS, SI NO SIN FONDO SE PIERDE*/
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /*    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
     font-weight: bold;
 }
 
@@ -57,7 +59,7 @@ header footer {
 }
 
 .imagen-genero {
-    border-radius: 50%;
+    border-radius: 1vh;
     width: 23vh;
     height: 23vh;
     object-fit: cover;
@@ -67,8 +69,8 @@ header footer {
 
 .container {
     background-color: beige;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 1vh;
+    padding-top: 4vh;
 }
 
 
@@ -94,8 +96,9 @@ header footer {
 }
 
 .tituloGeneros {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+/*    padding-bottom: 10px;
+    margin-bottom: 10px;*/
+    font-size:3vh;
 }
 
 a:link, a:visited, a:active {

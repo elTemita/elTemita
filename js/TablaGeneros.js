@@ -42,6 +42,7 @@ function cargarGeneros() {
             filaInterna.setAttribute('class', 'row');
 
             var tituloGenero = document.createElement("div");
+            tituloGenero.setAttribute('class', 'tituloGeneros');
             tituloGenero.appendChild(document.createTextNode(generos[j][0]));  // acá en realidad va el label
 
             var imagenCont = document.createElement("div");
@@ -51,7 +52,7 @@ function cargarGeneros() {
 
             var imagen = document.createElement("img");
             imagen.setAttribute('src', generos[j][2]);
-            imagen.setAttribute('class', 'rounded center imagen-genero');
+            imagen.setAttribute('class', 'center imagen-genero');
 
             imagenLink.appendChild(imagen);
             imagenCont.appendChild(imagenLink);
