@@ -64,12 +64,12 @@ function cargarGeneros() {
 
         contenedorGeneros.appendChild(fila);
 
-
-
     }
-    var body = document.getElementsByTagName("BODY")[0];
-    body.appendChild(contenedorGeneros);
+    //var body = document.getElementsByTagName("BODY")[0];
+    //body.appendChild(contenedorGeneros);
 
+    var contenedor = document.getElementById("grillaGeneros");
+    contenedor.appendChild(contenedorGeneros);
 }
 
 //Se lanza la función cuando carga la página
