@@ -96,9 +96,10 @@
     function registrar() {
         var nombre = document.getElementById("usuario").value;
         var mail = document.getElementById("mail").value;
+        var mail = document.getElementById("contra").value;
 
 
-        if (nombre == "" || mail == "") {
+        if (nombre == "" || mail == "" || contra == "") {
             alert("Debes ingresar todos los campos para continuar");
             return false;
         } else {
