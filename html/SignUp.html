@@ -81,11 +81,11 @@
               
                     <div class="row">
                         <div class="col">
-                            <button onclick=registrar() id="enviar" class="btn-dark form-control my-3 "> Enviar</button>
+                            <button onclick="return registrar()" id="enviar" class="btn-dark form-control my-3 "> Enviar</button>
                         </div>
                     </div>
             </form>
-            <div class="mb-2"><a href="SignUp.html">Ya tengo cuenta, iniciar sesión</a></div>
+            <div class="mb-2"><a href="LogIn.html">Ya tengo cuenta, iniciar sesión</a></div>
         </div>
     </div>
 </body>
@@ -94,20 +94,25 @@
 
 <script>
     function registrar() {
-        var nombre = document.getElementById("usuario");
-        var mail = document.getElementById("mail");
-        document.form.submit();
-        alert(usuario.value);
+        var nombre = document.getElementById("usuario").value;
+        var mail = document.getElementById("mail").value;
 
+
+        if (nombre == "" || mail == "") {
+            alert("Debes ingresar todos los campos para continuar");
+            return false;
+        } else {
+            document.form.submit();
+            alert("Bienvenido, " + usuario.value + ". En breve te va a llegar un mail para activar tu cuenta");
+        }
+      
     }
 
-    var input = document.getElementById("contra");
     input.addEventListener("keyup", function (event) {
-        //Number 13 is the "Enter" key on the keyboard
+        //13 - Tecla enter
         if (event.keyCode === 13) {
-            // Cancel the default action, if needed
             event.preventDefault();
-            // Trigger the button element with a click
+            // Lanza el click en el boton
             document.getElementById("enviar").click();
         }
     });

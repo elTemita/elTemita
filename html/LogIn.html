@@ -34,7 +34,7 @@
                         <a class="btn btn-outline-light form-control " id="enviar" href="SignUp.html"> Registrarse </a>
                     </span>
                     <span class="navbar-text mx-2">
-                        <a class="btn btn-light form-control" id="enviar" href="LogIn.html"> Iniciar Sesión </a>
+                        <a class="btn btn-light form-control" id="enviar" href="SignUp.html"> Iniciar Sesión </a>
                     </span>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="row my-3">
                         <div class="col">
-                            <button onclick=go() id="enviar" class="btn-dark form-control"> Enviar</button>
+                            <button onclick="return iniciarSesion()" id="enviar" class="btn-dark form-control"> Enviar</button>
                         </div>
                     </div>
 
@@ -78,23 +78,22 @@
 
     <script>
 
-        function go() {
+        function iniciarSesion() {
             if (document.form.password.value == 'contra' && document.form.login.value == 'usuario') {
                 document.form.submit();
-                // alert("OK");
             }
             else {
-                alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+                alert("Tu nombre de usuario o contraseña son incorrectos. Intenta nuevamente");
+                return false;
             }
         }
         var input = document.getElementById("enviar");
 
         input.addEventListener("keyup", function (event) {
-            //Number 13 is the "Enter" key on the keyboard
+            //13 - Tecla enter
             if (event.keyCode === 13) {
-                // Cancel the default action, if needed
                 event.preventDefault();
-                // Trigger the button element with a click
+                // Lanza el click en el boton
                 document.getElementById("enviar").click();
             }
         });
