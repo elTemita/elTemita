@@ -66,25 +66,26 @@
                         <input type="password" id="contra" name="password" class="form-control colorArriba" />
                     </div>
                 </div>
+                <!--Radio Buttons-->
                 <div class="row justify-content-center my-3">
-                    <div class="col mx-auto ">
-                        <label>Soy artista</label>
-                        <input type="radio" id="artista" name="password" value="artista" checked class="colorArriba" />
+                    <div class="col mx-auto">
+                        <label class="form-check-label" for="artista1">Soy artista</label>
+                        <input type="radio" id="artista1" name="password" value="artista" checked class="colorArriba" />
                     </div>
-                    <div class="col  mx-auto">
-                        <label>Soy usuario</label>
-                        <input type="radio" id="usuario" name="password" value="usuario" class="colorArriba" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button onclick=registrar() id="enviar" class="btn-dark form-control my-3 "> Enviar</button>
+                    <div class="form-check col  mx-auto">
+                        <label class="form-check-label" for="usuario1">Soy usuario</label>
+                        <input type="radio" id="usuario1" name="password" value="usuario" class="colorArriba" />
                     </div>
                 </div>
+              
+                    <div class="row">
+                        <div class="col">
+                            <button onclick=registrar() id="enviar" class="btn-dark form-control my-3 "> Enviar</button>
+                        </div>
+                    </div>
             </form>
         </div>
     </div>
-
 </body>
 </html>
 
