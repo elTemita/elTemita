@@ -10,6 +10,7 @@ function go() {
     }
 }
 var input = document.getElementById("enviar");
+
 input.addEventListener("keyup", function (event) {
     //Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
