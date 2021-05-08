@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Para que cuando se abre en mobile se vea a escala -->
     <link href="../estilos/bootstrap.css" rel="stylesheet" />
     <script src="../estilos/bootstrap.js"></script>
-    <title>ElTemita</title>
+    <title>ElTemita | Home</title>
     <link href="../estilos/estilos.css" rel="stylesheet" />
     <script src="../js/TablaGeneros.js"></script>
 
@@ -13,7 +13,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid"> <!--todo el ancho de la página-->
+        <div class="container-fluid">
+            <!--todo el ancho de la página-->
             <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,18 +38,22 @@
         </div>
     </nav>
 
-    <div class="container p-0 cont-imagen mt-5">
-        <div class="row imagen-principal align-items-center mx-0">
-            <div class="row mx-0  ">    <!--py-5-->
+    <!-- Contenedor para la imagen principal
+        p-0 sin padding
+        mt-5 margen solo arriba
+         -->
+    <div class="container cont-imagen">
+        <div class="row imagen-principal mx-0">
+            <div class="row mx-0">
                 <div class="col-lg-6 my-auto">
-                    <div class="col-sm-12 col-lg-3 mx-auto ">
-                        <img src="../images/logoblanco.png" />
+                    <div class="col-sm-12 col-lg-6 mx-auto sombra-logo ">
+                        <img src="../images/loguitovector.svg" />
                     </div>
                 </div>
                 <div class="col-lg-6 my-auto overlay-transp pt-5 pb-3 prueba2 roun">
                     <p class="texto-titulo">en elTemita te recomendamos los mejores recitales</p>
                     <hr class="lead my-4">
-                    <p class="lead">descubrí nuevas bandas, escuchá sus temas, y reservá tus entradas desde acá... nosotros nos encargamos del resto!.</p>
+                    <p class="lead">descubrí nuevas bandas, escuchá sus temas, y reservá tus entradas desde acá!.</p>
                     <p>
                     </p>
                 </div>
@@ -61,21 +66,20 @@
         <h1>Próximos eventos</h1>
     </div>
 
+    <footer>
+        holis
+    </footer>
 
-
-    <footer></footer>
 </body>
 </html>
 
 <style>
     .cont-imagen {
-        height: 50vh;    }
-
-
-    .prueba {
-        align-items: center !important;
+        height: 50vh;
+        padding: 0 !important;
+        margin-top: 3rem !important;
+        overflow:hidden;
     }
-
 
     .imagen-principal {
         background-image: url("../images/people-festival.jpg");
@@ -84,12 +88,21 @@
         background-size: cover;
         height: 100%;
         text-align: center;
+        align-items: center !important;
+    }
+
+    .prueba {
+        align-items: center !important;
+    }
+
+
+    .sombra-logo {
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
     }
 
     .overlay-transp {
         background: rgba( 255, 255, 255, 0.5 );
         backdrop-filter: blur( 4px );
-
     }
 
     img:hover {
@@ -104,7 +117,7 @@
 
     .texto-titulo {
         font-size: 1.5rem;  
-        font-weight: 300;
+        font-weight: 500;
     }
 
 </style>

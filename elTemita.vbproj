@@ -96,6 +96,7 @@
     <Content Include="estilos\bootstrap.css" />
     <Content Include="estilos\bootstrap.js" />
     <Content Include="estilos\estilos.css" />
+    <Content Include="estilos\estilosusuario.css" />
     <Content Include="html\Calendario.html" />
     <Content Include="html\Cumbia.html" />
     <Content Include="html\Electronica.html" />
@@ -119,6 +120,7 @@
     <Content Include="images\generos-imagenes\rock.jpg" />
     <Content Include="images\logo.svg" />
     <Content Include="images\logoblanco.png" />
+    <Content Include="images\loguitovector.svg" />
     <Content Include="images\people-festival.jpg" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
