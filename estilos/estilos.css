@@ -130,3 +130,17 @@ a:link, a:visited, a:active {
 .btn-outline-light:hover {
     color: #000000 !important;
 }
+
+/*Separadores para los detalles de eventos*/
+
+.linea-evento {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 1.3em;
+}
+
+
+strong {
+    padding-inline: 1em;
+}
