@@ -1,7 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 body {
-    /*  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHsBeWHOWOC7xJNSv7N6WTZ06BIdSq2UkbQ&usqp=CAU");*/
     background-image: url("https://i.pinimg.com/originals/3f/b9/d7/3fb9d7397d0f6ce64e99d3561db75d03.png");
     background-size: cover;
     min-height: 100vh;
@@ -10,17 +9,9 @@ body {
 
 h1 {
     text-align: center;
-    /*    color: white;*/
     width: 100%;
-    /*    padding-top: 40px;
-    padding-bottom: 40px;*/
-    /*Lo cambio a rem asi queda responsive*/
     padding-top: 1rem ;
-/*    padding-bottom: 0.5rem;*/
     margin-bottom: 5px;
-    /*background-color: rgba(150,150,150,0.9);*/
-    /*BORDECITO DE COLOR NEGRO PARA LA LETRA DE LOS TÍTULOS, SI NO SIN FONDO SE PIERDE*/
-    /*    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
     font-weight: bold;
 }
 
@@ -29,7 +20,6 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 10px;
     background-color: rgba(255,0,110,0.3);
-
 }
 
 h5 {
@@ -39,15 +29,6 @@ h5 {
 header footer {
     height: 100px;
     background-color: rgb(27, 27, 27);
-}
-
-.nombre {
-    /*margin-left: 100px;*/
-}
-
-.imagen {
-    /*width: 200px;
-    height: 200px;*/
 }
 
 .genero {
@@ -65,8 +46,6 @@ header footer {
     object-fit: cover;
 }
 
-
-
 .container {
     background-color: beige;
     padding-bottom: 1vh;
@@ -78,13 +57,10 @@ header footer {
     background-color: bisque;
 }
 
-.agus {
+.fondocal {
     background-color: pink;
     float: left;
-    /* overflow: hidden;*/
     display: inline-block;
-    
-
     justify-content: left;
     height: 100%;
 }
@@ -109,7 +85,7 @@ a:link, a:visited, a:active {
 
 
 
-/*Desde acá son los que se usan para login y sign up*/
+/*Estos dos que se usan para login y sign up*/
 .caja-transparente {
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -146,8 +122,6 @@ a:link, a:visited, a:active {
 .playlist iframe {
     height: 300px;
 }
-
-
 
 /* Ajuste para el botón blanco de navbar, si no queda con texto blanco*/
 .btn-light {

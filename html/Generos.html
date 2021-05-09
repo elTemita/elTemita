@@ -13,9 +13,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <!--todo el ancho de la página-->
-            <h5> Prueba</h5>
+        <div class="container-fluid">   <!--todo el ancho de la página-->
+
             <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" width="100" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,10 +38,6 @@
         </div>
     </nav>
 
-    <!-- Contenedor para la imagen principal
-        p-0 sin padding
-        mt-5 margen solo arriba
-         -->
     <div class="container cont-imagen">
         <div class="row imagen-principal mx-0">
             <div class="row mx-0">
@@ -51,12 +46,10 @@
                         <img src="..\images\logo.png" />
                     </div>
                 </div>
-                <div class="col-lg-6 my-auto overlay-transp pt-5 pb-3 prueba2 roun">
+                <div class="col-lg-6 my-auto overlay-transp pt-5 pb-3 ">
                     <p class="texto-titulo">En elTemita te recomendamos los mejores recitales</p>
-                    <hr class="lead my-4">
+                    <hr class="lead my-2">
                     <p class="lead">Descubrí nuevas bandas, escuchá sus temas, y reservá tus entradas desde acá!.</p>
-                    <p>
-                    </p>
                 </div>
             </div>
 
@@ -66,10 +59,6 @@
     <div class="container" id="grillaGeneros">
         <h1>Próximos eventos</h1>
     </div>
-
-    <footer>
-        holis
-    </footer>
 
 </body>
 </html>
@@ -92,11 +81,6 @@
         align-items: center !important;
     }
 
-    .prueba {
-        align-items: center !important;
-    }
-
-
     .sombra-logo {
         filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
     }
@@ -104,16 +88,6 @@
     .overlay-transp {
         background: rgba( 255, 255, 255, 0.5 );
         backdrop-filter: blur( 4px );
-    }
-
-    img {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 1.5;
-        transition: .5s ease;
-      /*  <!-- ackground-color: rgba(108, 44, 206, 1); --/>*/
     }
 
     .texto-titulo {

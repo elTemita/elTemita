@@ -1,8 +1,20 @@
 ﻿
-function Enviar() {
+function EnviarFecha() {
     var nombre = document.getElementById("nombreBanda");
     var fecha = document.getElementById("fecha");
-    alert("Gracias por contactarnos, " + nombre.value + "!")
+
+
+    if (nombreBanda == "" || fecha == "") {
+        alert("Debes ingresar todos los campos para continuar");
+        return false;
+    } else {
+        document.form.submit();
+        alert("Gracias por contactarnos, " + nombre.value + "!");
+
+    }
+
+
+
 }
 
 function entradasOk() {

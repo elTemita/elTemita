@@ -23,11 +23,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Calendario</a>
                     </li>
-                    <!--
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Asd</a>
+                        <a class="nav-link" href="AboutUs.html">Nosotros</a>
                     </li>
-                    -->
                 </ul>
                 <span class="navbar-text mx-2 ">
                     <a class="btn btn-outline-light form-control " id="enviar" href="SignUp.html"> Registrarse </a>
@@ -39,34 +37,23 @@
         </div>
     </nav>
 
-
-    <!--<div>
-        <iframe src="https://calendar.google.com/calendar/embed?src=l364nrduo662vcup8jtncrtj1g%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>-->
-
-
-
-    <div class="container ">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-9">
                 <iframe src="https://calendar.google.com/calendar/embed?src=l364nrduo662vcup8jtncrtj1g%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
 
-            <div class="col-sm-12 col-lg-3 genero m-auto agus ">
-                <!--<div class="row" style="margin-left:900px ; margin-top:300px">-->
+            <div class="col-sm-12 col-lg-3 genero m-auto fondocal">
                
                 <form class="py-lg-3">
-                    <label><b><u> Mandanos tu fechita </u></b></label>
-                    <label for="nombre">Ingrese el nombre de la banda:</label>
+                    <label><b><u> Mandanos tu fechita</u></b></label>
+                    <label for="nombreBanda">Ingresá el nombre de la banda:</label>
                     <input type="text" id="nombreBanda" name="nombreBanda"><br>
-                    <label for="start">Ingrese la fecha </label><br>
-                    <input type="date" id="fecha" name="trip-start"><br><br>
-                    <!--min="2021-04-26" -->
-                    <!-- max="2021-12-31" -->
-                    <!--value="2021-04-26"-->
-                    <button onclick=Enviar() id="enviar" class="btn-dark form-control"> Enviar</button>
+                    <label for="fecha">Ingresá la fecha </label><br>
+                    <input type="date" id="fecha" name="fecha-reci"><br><br>
+                    <button onclick="return EnviarFecha()" id="enviar" class="btn-dark form-control"> Enviar</button>
                 </form>
-                <!--</div>-->
+
             </div>
 
 
@@ -79,9 +66,12 @@
 </body>
 </html>
 <script>
+
+
+    //Para el selector de fecha: solo permite fechas entre hoy y fin de año.
     var today = new Date();
     var dd = today.getDate();
-    var mm = today.getMonth() + 1; //January is 0!
+    var mm = today.getMonth() + 1; //Enero es el mes 0
     var yyyy = today.getFullYear();
     if (dd < 10) {
         dd = '0' + dd
