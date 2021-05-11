@@ -97,6 +97,7 @@
     <Content Include="estilos\bootstrap.js" />
     <Content Include="estilos\estilos.css" />
     <Content Include="estilos\estilosusuario.css" />
+    <Content Include="html\AboutUs.html" />
     <Content Include="html\Calendario.html" />
     <Content Include="html\Cumbia.html" />
     <Content Include="html\Electronica.html" />
